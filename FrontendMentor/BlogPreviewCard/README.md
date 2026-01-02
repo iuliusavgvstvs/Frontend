@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://https://iuliusavgvstvs.github.io/Frontend/FrontendMentor/BlogPreviewCard/)
+- Live Site URL: [GitHub Page link](https://iuliusavgvstvs.github.io/Frontend/FrontendMentor/BlogPreviewCard/)
 
 ## My process
 
