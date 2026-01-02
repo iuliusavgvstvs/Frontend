@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Colors */
+  --color-white: hsl(0, 0%, 100%);
+  --color-primary: hsl(212, 45%, 89%);
+  --color-secondary: hsl(216, 15%, 48%);
+  --color-tertiary: hsl(218, 44%, 22%);
+
+  /* Font */
+  --font-outfit: "Outfit", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-size-base: 15px;
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+}
+
+body {
+  font-family: var(--font-outfit);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-base);
+  background-color: var(--color-primary);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  max-width: 100%;
+  background-color: var(--color-white);
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) var(--spacing-md) var(--spacing-xl);
+  border-radius: 20px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+}
+
+.qr-card__image {
+  margin: 0;
+}
+
+.qr-card__image img {
+  border-radius: 10px;
+}
+
+.qr-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+.qr-card__title {
+  font-size: 22px;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-tertiary);
+  text-align: center;
+}
+
+.qr-card__description {
+  color: var(--color-secondary);
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
